@@ -1,3 +1,7 @@
+import random
+
 favorite_fruits = ["Apple", "Banana", "Orange", "Grapes", "Strawberry"]
 word_list = favorite_fruits
 print(word_list) 
+word = random.choice(word_list)
+print(word)
