@@ -1,9 +1,28 @@
-# Hangman
-Hangman is a classic game in which a player thinks of a word and the other player tries to guess that word within a certain amount of attempts.
+# Project Title
 
-This is an implementation of the Hangman game, where the computer thinks of a word and the user tries to guess it. 
+[Your Project Title]
 
-*Insert:   Installation instructions
-          Usage instructions
-          File structure of the project
-          License information*
+## Table of Contents
+
+- [Description](#description)
+- [Installation](#installation)
+- [Usage](#usage)
+- [File Structure](#file-structure)
+- [License](#license)
+
+## Description
+
+[Provide a brief description of your project, including its purpose, functionality, and what you learned during its development.]
+
+## Installation
+
+[Include instructions on how to install your project. This could involve dependencies, package managers, or any specific setup steps.]
+
+## Usage
+
+[Explain how users can use your project. Provide examples or code snippets to illustrate its usage.]
+
+## File Structure
+
+[Outline the structure of your project's files and directories.]
+
