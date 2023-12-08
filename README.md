@@ -17,8 +17,8 @@ Hangman Game is a simple Python application designed for entertainment. The main
 
 To run the Hangman Game, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/your-username/hangman-game.git`
-2. Navigate to the project directory: `cd hangman-game`
+1. Clone the repository: `[git clone https://github.com/your-username/hangman-game.git](https://github.com/Koffeekup2610/hangman579.git)`
+2. Navigate to the project directory: `cd hangman579`
 3. Run the game script: `python milestone_4.py`
 
 Make sure you have Python installed on your system.
