@@ -27,7 +27,7 @@ class Hangman:
             return True
         else:
             self.num_lives -= 1
-            print(f"Sorry, '{guess}' is not in the word. Lives remaining: {self.num_lives}")
+            print(f"Sorry, '{guess}' is not in the word. You have {self.num_lives} lives left.")
             return False
 
     def _update_word_guessed(self, guess):
@@ -42,18 +42,25 @@ class Hangman:
             guess = input("Enter a single letter: ")
 
             if len(guess) == 1 and guess.isalpha():
-                return guess.lower()
+                if self.check_guess(guess):
+                    self.print_word_guessed()
+                break
             elif len(guess) != 1:
                 print("Invalid letter. Please, enter a single alphabetical character.")
             elif guess in self.list_of_guesses:
                 print(f"You already tried that letter: '{guess}'. Try again.")
-            else:
-                self.check_guess(guess)
+
+    def print_word_guessed(self):
+        print("Current word: ", " ".join(self.word_guessed))
 
 # Testing the Hangman class
 hangman_game = Hangman(["Apples", "Bananas", "Cherries", "Grapes", "Kiwis"])
 
 while True:
     user_guess = hangman_game.ask_for_input()
-    if hangman_game.check_guess(user_guess):
+    if hangman_game.num_letters == 0:
+        print("Congratulations! You guessed the word:", hangman_game.word)
+        break
+    elif hangman_game.num_lives == 0:
+        print("Sorry, you're out of lives. The word was:", hangman_game.word)
         break
